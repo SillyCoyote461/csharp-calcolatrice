@@ -58,10 +58,28 @@ public static class CalcoliHelper
     //ringraziamo il polimorfismo per cotanta flessibilitá
 
     //nth power
-    public static double GetPow(double x, double y)
+ 
+    public static double GetPow(int x, int y)
     {
-        if(x is 0 && y is 0) return 0;
+        int result = x;
+        if (x is 0 && y is 0) return 1;
+        else if (y < 0 && x >= 0)
+        {
+            for (int i = 1; i < y; i++)
+            {
+                result *= x;
+            }
+            return 1 / result;
+        }
+        else
+        {
+            for (int i = 1; i < y; i++)
+            {
+                result *= x;
 
+            }
+            return result;
+        }
     }
 }
 
