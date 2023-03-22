@@ -1,0 +1,1 @@
+﻿double xy = CalcoliHelper.GetSum();
