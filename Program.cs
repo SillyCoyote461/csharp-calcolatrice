@@ -29,5 +29,4 @@ Console.WriteLine(CalcoliHelper.GetMax(10.3, 22.1));
 Console.WriteLine($"{nl}Potenza");
 Console.WriteLine(CalcoliHelper.GetPow(5, 5));
 Console.WriteLine(CalcoliHelper.GetPow(0, 0));
-Console.WriteLine(CalcoliHelper.GetPow(-5, -2));
-Console.WriteLine(1 / 2);
+Console.WriteLine(CalcoliHelper.GetPow(-2, -3));

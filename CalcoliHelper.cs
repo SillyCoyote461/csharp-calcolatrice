@@ -63,20 +63,17 @@ public static class CalcoliHelper
     {
         int result = x;
         if (x is 0 && y is 0) return 1;
-        else if (y < 0 && x >= 0)
+        else if (y is 0) return 1;
+        else if (x is 0) return 0;
+        else if (y < 0)
         {
-            for (int i = 1; i < y; i++)
-            {
-                result *= x;
-            }
-            return 1 / result;
+            return 1 / GetPow(x, GetAbsolute(y));
         }
         else
         {
             for (int i = 1; i < y; i++)
             {
                 result *= x;
-
             }
             return result;
         }
